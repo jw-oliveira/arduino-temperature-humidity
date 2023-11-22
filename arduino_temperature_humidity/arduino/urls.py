@@ -6,5 +6,6 @@ app_name = 'arduino'
 
 urlpatterns = [
     path('/index', views.index, name='index'),
-    path('/input_data', RecordsCreateView.as_view(), name='input_data')
+    path('/input_data', RecordsCreateView.as_view(), name='input_data'),
+    path('/records', views.RecordsCreateView.as_view(), name='records')
 ]

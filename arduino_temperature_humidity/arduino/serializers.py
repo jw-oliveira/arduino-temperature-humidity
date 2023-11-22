@@ -5,4 +5,4 @@ from .models import Records
 class RecordsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Records
-        fields = ['id', 'temperature', 'humidity', 'registry_date']
+        fields = "__all__"
